@@ -45,7 +45,7 @@ export default function Index() {
       {/* header section*/}
      <View style={styles.turnCon}>
       <Text style={{ fontSize: 18, fontWeight: 'bold',
-        color: turn === "X Turn" ? "red": "green",
+        color: turn === "X Turn" ? "#2d050c": "#5d210e",
       }}>{turn}</Text>
       </View>
       
@@ -78,7 +78,7 @@ export default function Index() {
                 <Text style={{ 
                   fontSize: 24,
                   fontWeight: "bold", 
-                  color: fText[idx] === "X" ? "red" : fText[idx] === "O" ? "green" : "#fff",
+                  color: fText[idx] === "X" ? "#2d050c" : fText[idx] === "O" ? "#5d210e" : "#fff",
                 }}>{fText[idx]}</Text>
               </TouchableOpacity>
             );
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   gameCon: {
     width: "80%",
     height: "50%",
-    backgroundColor: "#2f3a12",
+    backgroundColor: "#2f5835",
     borderRadius: 10,
     borderWidth: 10,
     borderColor: "#fff",
